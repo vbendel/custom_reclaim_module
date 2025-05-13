@@ -13,13 +13,15 @@ Exports the following procfs interface:
 /proc/sys/custom_reclaim/total_nr_reclaimed_pages
 /proc/sys/custom_reclaim/custom_reclaim
 ~~~
-* custom_reclaim
+* ***custom_reclaim***
+  
   Root write-only file. Takes 2 inpt values - node_id (int node index) and nr_to_reclaim (in bytes)
   Example - reclaim 200MB on node 0:
   ~~~
   # echo "0 209715200" > /proc/sys/custom_reclaim/custom/reclaim
   ~~~
-* total_nr_reclaimed_pages
+* ***total_nr_reclaimed_pages***
+
   Read-only file that return the number of pages that were succesfully reclaimed by this module, as returned by `do_try_to_free_pages()` kernel function.
 
 ## DISCLAIMER
