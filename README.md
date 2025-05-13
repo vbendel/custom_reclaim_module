@@ -16,7 +16,8 @@ Exports the following procfs interface:
 * ***custom_reclaim***
   
   Root write-only file. Takes 2 inpt values - node_id (int node index) and nr_to_reclaim (in bytes)
-  Example - reclaim 200MB on node 0:
+
+  Example: Reclaim 200MB on node 0:
   ~~~
   # echo "0 209715200" > /proc/sys/custom_reclaim/custom/reclaim
   ~~~
