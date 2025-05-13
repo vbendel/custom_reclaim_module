@@ -10,8 +10,8 @@ Repo contains a Makefile that builds a .ko object file which can be loaded into 
 
 Exports the following procfs interface:
 ~~~
-/proc/sys/custom_reclaim/total_nr_reclaimed_pages
 /proc/sys/custom_reclaim/custom_reclaim
+/proc/sys/custom_reclaim/total_nr_reclaimed_pages
 ~~~
 * ***custom_reclaim***
   
